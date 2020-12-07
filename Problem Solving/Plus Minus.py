@@ -8,19 +8,19 @@ import sys
 
 # Complete the plusMinus function below.
 def plusMinus(arr):
-    positive = 0
-    negetive = 0
-    neutral = 0
+    positiveCount = 0
+    negetiveCount = 0
+    neutralCount = 0
     for i in range(len(arr)):
         if arr[i] > 0:
-            positive = positive + 1
+            positiveCount += 1
         if arr[i] == 0:
-            neutral = neutral + 1
+            neutralCount += 1
         if arr[i] < 0:
-            negetive = negetive + 1
-    print(positive/len(arr))
-    print(negetive/len(arr))
-    print(neutral/len(arr))
+            negetiveCount += 1
+    print(positiveCount/len(arr))
+    print(negetiveCount/len(arr))
+    print(neutralCount/len(arr))
             
 if __name__ == '__main__':
     n = int(input())

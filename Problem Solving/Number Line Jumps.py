@@ -8,12 +8,16 @@ import sys
 
 # Complete the kangaroo function below.
 def kangaroo(x1, v1, x2, v2):
-    for n in range(10000):
-        if((x1+v1)==(x2+v2)):
-            return "YES"
-        x1+=v1
-        x2+=v2
-    return "NO"
+    if (x1 < x2 and v1 <= v2):  
+        return 'NO'
+    
+    if (x1 > x2 and v1 >= v2):          
+        return 'NO'
+    
+    if (x1 - x2) % (v1 - v2) != 0:         
+        return 'NO'
+    
+    return 'YES'
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

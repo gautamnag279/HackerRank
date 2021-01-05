@@ -7,7 +7,7 @@ def depth(elem, level):
     if level == maxdepth:
         maxdepth += 1
     for i in elem:
-        #using recursion. For help go here - https://stackoverflow.com/questions/479343/         how-can-i-build-a-recursive-function-in-python
+        #using recursion. For help go here - https://stackoverflow.com/questions/479343/how-can-i-build-a-recursive-function-in-python
         depth(i , level + 1)
 
 if __name__ == '__main__':

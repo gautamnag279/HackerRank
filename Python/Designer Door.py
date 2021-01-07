@@ -8,6 +8,6 @@ for i in range(1,N,2):
 #this puts the WELCOME part in the bottom
 print('WELCOME'.center(M,'-')) 
 
-#this prints the remaining part of the 
+#this prints the remaining part of the figure
 for i in range(N-2,-1,-2): 
     print((i*'.|.').center(M, '-'))

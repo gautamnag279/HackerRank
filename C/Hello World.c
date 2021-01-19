@@ -1,8 +1,7 @@
-int main ()
+int main() 
 {
-	char s[100];
-	fgets(s, sizeof(s), stdin);
-	printf("Hello, World!\n%s", s);
-	
-	return 0;
+    char s[100];
+    scanf("%[^\n]%*c", s);
+    printf("Hello, World!\n%s", s);   
+    return 0;
 }

@@ -1,3 +1,5 @@
+// THIS IS THE TOUGHEST PROBLEM I HAVE ENCOUNTERED SO FAR
+
 'use strict';
 
 const fs = require('fs');

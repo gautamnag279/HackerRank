@@ -8,3 +8,17 @@ for _ in range(N):
         getattr(L, command)(*(int(x) for x in args))
     except AttributeError:
         print(L)
+
+        
+        
+#THIS CODE IS MUCH CLEAR TO UNDERSTAND 
+n = int(input())
+lst = []
+for _ in range(n):
+    s = input()
+    cmd , *task = s.split()
+    if cmd != 'print':
+        cmd += "("+ ",".join(task) +")"
+        eval("lst."+cmd)
+    else:
+        print(lst)

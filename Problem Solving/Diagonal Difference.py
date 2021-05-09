@@ -27,3 +27,13 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+    
+    
+    
+#THIS CODE IS BETTER
+n = int(input())
+sum = 0
+for i in range(n):
+    row = input().split()
+    sum += int(row[i]) - int(row[-(i+1)])
+print(abs(sum))
